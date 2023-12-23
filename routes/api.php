@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Api\v1\AttendanceController;
+use App\Http\Controllers\api\v1\EmployeesController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('/attendance/upload', [AttendanceController::class, 'upload']);
+Route::get('/attendance/{employee}', [AttendanceController::class, 'getAttendanceInfo']);
+Route::get('/attendance', [AttendanceController::class, 'getAttendance']);
+Route::get('employees',[EmployeesController::class,'index']);
+
