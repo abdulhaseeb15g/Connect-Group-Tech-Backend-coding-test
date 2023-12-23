@@ -43,7 +43,7 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">home</a></li>
                 <li><a href="{{route('challenge1')}}">Challenge1</a></li>
-                <li class=""><a href="#">Challenge2</a></li>
+                <li><a href="{{route('challenge2')}}">Challenge2</a></li>
                 <li><a href="#">Challenge3</a></li>
                 <li><a href="#">Challenge4</a></li>
             </ul>

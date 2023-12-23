@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/challange1', function () {
     return view('challenge1.index');
 })->name('challenge1');
+
+Route::get('/challange2', function () {
+    return view('challenge2.index');
+})->name('challenge2');
