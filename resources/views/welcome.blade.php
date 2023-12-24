@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>BackEnd Task</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -45,7 +45,7 @@
                 <li><a href="{{route('challenge1')}}" target="_blank">Challenge1</a></li>
                 <li><a href="{{route('challenge2')}}" target="_blank">Challenge2</a></li>
                 <li><a href="{{asset('challenge3/challenge3.pdf') }}" target="_blank">Challenge3</a></li>
-                <li><a href="#">Challenge4</a></li>
+                <li><a href="{{route('challenge4')}}" target="_blank">Challenge4</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
 {{--                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>--}}

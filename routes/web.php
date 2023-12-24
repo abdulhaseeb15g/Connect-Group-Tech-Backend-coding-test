@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GroupByOwnersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,5 @@ Route::get('/challange1', function () {
 Route::get('/challange2', function () {
     return view('challenge2.index');
 })->name('challenge2');
+
+Route::get('/grouped-owners', [GroupByOwnersController::class, 'showGroupedOwners'])->name('challenge4');
