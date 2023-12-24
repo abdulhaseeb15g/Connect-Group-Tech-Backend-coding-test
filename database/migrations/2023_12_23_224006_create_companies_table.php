@@ -13,14 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('locations', function (Blueprint $table) {
+        Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('address');
-            $table->string('lat');
-            $table->string('lnt');
+            $table->unsignedInteger('location_id');
+            $table->unsignedInteger('asset_id'); // Specify the table name explicitly
+            $table->unsignedInteger('company_group_id');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('locations');
+        Schema::dropIfExists('companies');
     }
 };

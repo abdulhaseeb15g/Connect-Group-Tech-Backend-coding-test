@@ -12,4 +12,10 @@ class location extends Model
     {
         return $this->hasMany(Attendance::class);
     }
+
+    public function companies()
+    {
+        return $this->hasMany(Company::class);
+    }
+
 }
